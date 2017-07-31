@@ -26,8 +26,9 @@
 	body {
 		background-color: _palette(bg);
 		@include vendor('background-image', (
-			'url("images/overlay.png")',
+		  'url("https://cosmicjs.com/uploads/e35a5250-762e-11e7-b82f-53113c014852-row.png")',
 			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
+
 		));
 
 		// Prevents animation/transition "flicker" on page load.
