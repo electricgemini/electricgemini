@@ -9,11 +9,14 @@
     "hogan-express": "^0.5.2",
     "node-sass": "^4.5.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass public/assets/main.scss public/assets/css/main.css -w"
+    "scss": "node-sass --include-path scss public/assets/sass/main.scss   public/assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run scss\""
   },
   "author": "",
   "license": "ISC"
