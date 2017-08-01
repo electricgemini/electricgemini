@@ -1013,10 +1013,10 @@ body {
 
 body {
   background-color: #000;
-  background-image: url("https://cosmicjs.com/uploads/e35a5250-762e-11e7-b82f-53113c014852-row.png"), -moz-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/e35a5250-762e-11e7-b82f-53113c014852-row.png"), -webkit-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/e35a5250-762e-11e7-b82f-53113c014852-row.png"), -ms-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/e35a5250-762e-11e7-b82f-53113c014852-row.png"), linear-gradient(45deg, #E41E85 15%, #000 85%); }
+  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -moz-linear-gradient(45deg, #E41E85 15%, #000 85%);
+  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -webkit-linear-gradient(45deg, #E41E85 15%, #000 85%);
+  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -ms-linear-gradient(45deg, #E41E85 15%, #000 85%);
+  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), linear-gradient(45deg, #E41E85 15%, #000 85%); }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
