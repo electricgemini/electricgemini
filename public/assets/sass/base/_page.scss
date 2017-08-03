@@ -11,9 +11,18 @@
 			width: device-width;
 		}
 
+	//page height
+	html{
+		height:100%;
+		position:relative;
+	}
+
 	// MSIE: Prevents scrollbar from overlapping content.
 		body {
 			-ms-overflow-style: scrollbar;
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
 		}
 
 	// Ensures page width is always >=320px.
@@ -24,12 +33,16 @@
 		}
 
 	body {
+		position:relative;
 		background-color: _palette(bg);
 		@include vendor('background-image', (
-		  'url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png")',
-			'linear-gradient(45deg, #{_palette(bg1)} 15%, #{_palette(bg2) 85%})',
+		  'url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png")',
+			'linear-gradient(40deg, #{_palette(bg2)} 15%, #{_palette(bg1) 65%})',
 
 		));
+
+
+
 
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.
@@ -41,3 +54,18 @@
 			}
 
 	}
+
+	body:before{
+							content: "";
+							display: block;
+							position:absolute;
+							bottom:0;
+							left:0;
+							/*@include vendor('background-image', (
+								'url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png repeat")'
+							));*/
+							background: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png") repeat;
+							width: 100%;
+							height:auto;
+							min-height: 100%;
+					}

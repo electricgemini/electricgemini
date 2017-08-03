@@ -1004,19 +1004,27 @@ body {
 @-ms-viewport {
   width: device-width; }
 
+html {
+  height: 100%;
+  position: relative; }
+
 body {
-  -ms-overflow-style: scrollbar; }
+  -ms-overflow-style: scrollbar;
+  width: 100%;
+  padding: 0px;
+  margin: 0px; }
 
 @media screen and (max-width: 480px) {
   html, body {
     min-width: 320px; } }
 
 body {
+  position: relative;
   background-color: #000;
-  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -moz-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -webkit-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), -ms-linear-gradient(45deg, #E41E85 15%, #000 85%);
-  background-image: url("https://cosmicjs.com/uploads/33837ed0-76ea-11e7-bf8d-cba45345228c-row.png"), linear-gradient(45deg, #E41E85 15%, #000 85%); }
+  background-image: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png"), -moz-linear-gradient(40deg, #000 15%, #E41E85 65%);
+  background-image: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png"), -webkit-linear-gradient(40deg, #000 15%, #E41E85 65%);
+  background-image: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png"), -ms-linear-gradient(40deg, #000 15%, #E41E85 65%);
+  background-image: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png"), linear-gradient(40deg, #000 15%, #E41E85 65%); }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1026,6 +1034,20 @@ body {
     -webkit-transition: none !important;
     -ms-transition: none !important;
     transition: none !important; }
+
+body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*@include vendor('background-image', (
+								'url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png repeat")'
+							));*/
+  background: url("https://cosmicjs.com/uploads/ae1a5ee0-76ed-11e7-a00c-4fed1ad8a55e-row-trans.png") repeat;
+  width: 100%;
+  height: auto;
+  min-height: 100%; }
 
 /* Type */
 body {
@@ -2442,6 +2464,8 @@ table.alt tbody tr td {
 
 /* Wrapper */
 #wrapper {
+  position: relative;
+  z-index: 100;
   width: 64em;
   max-width: calc(100% - 4em);
   margin: 0 auto; }
