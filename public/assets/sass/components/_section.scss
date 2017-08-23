@@ -6,10 +6,28 @@
 
 /* Section/Article */
 
+ section{
+	 width: _size(inner);
+	 max-width: calc(100% - 4em);
+	 margin:0 auto;
+ }
+
 	section, article {
 		&.special {
 			text-align: center;
 		}
+	}
+
+section.future-vision{
+		background-color: #000;
+		width:auto;
+		max-width:100%;
+		margin:0;
+
+    header p {
+      font-weight:normal;
+      size:1em!important;
+    }
 	}
 
 	header {

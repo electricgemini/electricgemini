@@ -1812,8 +1812,22 @@ dl dt {
   color: #ffffff; }
 
 /* Section/Article */
+section {
+  width: 64em;
+  max-width: calc(100% - 4em);
+  margin: 0 auto; }
+
 section.special, article.special {
   text-align: center; }
+
+section.future-vision {
+  background-color: #000;
+  width: auto;
+  max-width: 100%;
+  margin: 0; }
+  section.future-vision header p {
+    font-weight: normal;
+    size: 1em !important; }
 
 header.major {
   margin-bottom: 3em; }
@@ -2174,7 +2188,7 @@ table.alt tbody tr td {
   position: absolute;
   width: 100%;
   padding: 1em;
-  background-color: #f7f7f7;
+  background-color: #000;
   border-top-left-radius: 0.25em;
   border-top-right-radius: 0.25em;
   cursor: default;
@@ -2230,7 +2244,7 @@ table.alt tbody tr td {
     position: fixed;
     top: 0;
     padding: 0.5em 1em;
-    background-color: rgba(247, 247, 247, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     z-index: 10000; }
@@ -2350,8 +2364,8 @@ table.alt tbody tr td {
 #wrapper {
   position: relative;
   z-index: 100;
-  width: 64em;
-  max-width: calc(100% - 4em);
+  /* width: _size(inner);
+		max-width: calc(100% - 4em);*/
   margin: 0 auto; }
   @media screen and (max-width: 480px) {
     #wrapper {
