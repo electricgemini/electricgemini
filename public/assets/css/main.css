@@ -2235,9 +2235,9 @@ table.alt tbody tr td {
         border-radius: 8px;
         box-shadow: inset 0 0 0 1px transparent; }
         #nav ul li a:hover {
-          background-color: rgba(222, 222, 222, 0.25); }
+          background-color: #ffffff; }
         #nav ul li a.active {
-          background-color: #ffffff;
+          color: #ffffff;
           box-shadow: none; }
   #nav.alt {
     position: fixed;
