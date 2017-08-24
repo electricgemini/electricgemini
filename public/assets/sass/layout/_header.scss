@@ -12,6 +12,7 @@
 
 		h1 {
 			margin: 0 0 (_size(element-margin) * 0.125) 0;
+
 		}
 
 		p {
@@ -23,7 +24,8 @@
 			@include padding(6em, 5em, (1em, 0, 0, 0));
 
 			h1 {
-				font-size: 3.25em;
+				font-size: 2em;
+				opacity:0.45;
 			}
 
 			> * {
@@ -33,6 +35,7 @@
 			}
 
 			.logo {
+
 				@include vendor('transition', (
 					'opacity 1.25s ease',
 					'transform 0.5s ease'
@@ -44,7 +47,8 @@
 				img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					min-width: 55%;
+					max-width:95%;
 				}
 			}
 		}
