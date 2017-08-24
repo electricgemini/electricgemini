@@ -1086,19 +1086,19 @@ body:before {
 /* Type */
 body {
   background-color: #000;
-  color: rgba(255, 255, 255, 0.65); }
+  color: rgba(255, 255, 255, 0.55); }
 
 body, input, select, textarea {
   font-family: "Lato", sans-serif;
-  font-size: 17pt;
+  font-size: 18pt;
   font-weight: 300;
   line-height: 1.65; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 14pt; } }
+      font-size: 16pt; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 12pt; } }
+      font-size: 14pt; } }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
       font-size: 11pt; } }
@@ -1115,13 +1115,15 @@ a {
     border-bottom-color: transparent; }
 
 strong, b {
-  font-weight: 400; }
+  font-weight: 900; }
 
 em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 2em 0;
+  font-weight: 100;
+  letter-spacing: 0.1em; }
   p.content {
     -moz-columns: 20em 2;
     -webkit-columns: 20em 2;
@@ -1137,7 +1139,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.5;
   margin: 0 0 0.7em 0;
-  letter-spacing: -0.5 em; }
+  letter-spacing: 0.1em; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none; }
@@ -1147,7 +1149,8 @@ h1 {
   line-height: 1.2; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 900; }
 
 h3 {
   font-size: 1.25em; }
@@ -1396,7 +1399,7 @@ form {
 label {
   display: block;
   font-size: 0.9em;
-  font-weight: 400;
+  font-weight: 900;
   margin: 0 0 1em 0; }
 
 input[type="text"],
@@ -1548,7 +1551,7 @@ textarea {
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-  color: rgba(255, 255, 255, 0.65); }
+  color: rgba(255, 255, 255, 0.55); }
   input[type="checkbox"] + label:before,
   input[type="radio"] + label:before {
     background: rgba(255, 255, 255, 0.075);
@@ -1788,7 +1791,7 @@ dl {
   margin: 0 0 2em 0; }
   dl dt {
     display: block;
-    font-weight: 400;
+    font-weight: 900;
     margin: 0 0 1em 0; }
   dl dd {
     margin-left: 2em; }
@@ -1844,7 +1847,7 @@ header.major {
         margin-right: auto; }
   header.major p {
     font-size: 1.25em;
-    letter-spacing: -0.5 em; }
+    letter-spacing: 0.1em; }
   header.major.special {
     text-align: center; }
     header.major.special h2:after {
@@ -1886,7 +1889,7 @@ table {
     padding: 0.75em 0.75em; }
   table th {
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 900;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left; }
   table thead {
@@ -1952,6 +1955,9 @@ table.alt tbody tr td {
       margin-top: 0; }
     .features li > :last-child {
       margin-bottom: 0; }
+    .features li p {
+      letter-spacing: -0.05em;
+      color: #A89CC8; }
   @media screen and (max-width: 980px) {
     .features li {
       width: calc(50% - 2em); }
@@ -2003,7 +2009,7 @@ table.alt tbody tr td {
       line-height: 1.1;
       color: inherit !important;
       font-weight: 300;
-      letter-spacing: -0.5 em; }
+      letter-spacing: 0.1em; }
     .statistics li:first-child {
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px; }
@@ -2105,7 +2111,7 @@ table.alt tbody tr td {
     margin: 0 0 0.25em 0; }
   #header p {
     font-size: 1.25em;
-    letter-spacing: -0.5 em; }
+    letter-spacing: 0.1em; }
   #header.alt {
     padding: 7em 5em 4em 5em ; }
     #header.alt h1 {

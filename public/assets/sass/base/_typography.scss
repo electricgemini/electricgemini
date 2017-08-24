@@ -13,16 +13,16 @@
 
 	body, input, select, textarea {
 		font-family: _font(family);
-		font-size: 17pt;
+		font-size: 18pt;
 		font-weight: _font(weight);
 		line-height: 1.65;
 
 		@include breakpoint(xlarge) {
-			font-size: 14pt;
+			font-size: 16pt;
 		}
 
 		@include breakpoint(large) {
-			font-size: 12pt;
+			font-size: 14pt;
 		}
 
 		@include breakpoint(xxsmall) {
@@ -54,6 +54,8 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+	  font-weight:_font(weight-thin);
+		letter-spacing: _font(letter-spacing);
 
 		&.content {
 			-moz-columns: 20em 2;
@@ -87,6 +89,7 @@
 
 	h2 {
 		font-size: 1.5em;
+		font-weight: _font(weight-bold);
 	}
 
 	h3 {

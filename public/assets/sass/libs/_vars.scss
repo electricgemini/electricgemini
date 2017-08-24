@@ -21,15 +21,16 @@
 	$font: (
 		family:				('Lato', sans-serif),
 		family-fixed:		('Courier New', monospace),
+    weight-thin: 100,
 		weight:				300,
-		weight-bold:		400,
-		letter-spacing:		-0.5 em
+		weight-bold:		900,
+		letter-spacing:		0.1em
 	);
 
 // Palette.
 	$palette: (
 		bg:					#000,
-		fg:					rgba(255,255,255,0.65),
+		fg:					rgba(255,255,255,0.55),
 		fg-bold:			#ffffff,
 		fg-light:			rgba(255,255,255,0.5),
 		border:				rgba(255,255,255,0.35),

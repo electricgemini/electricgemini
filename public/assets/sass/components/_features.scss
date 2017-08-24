@@ -31,6 +31,11 @@
 			> :last-child {
 				margin-bottom: 0;
 			}
+
+			p{
+				letter-spacing: -0.05em;
+				color:#A89CC8;
+			}
 		}
 
 		@include breakpoint(medium) {
