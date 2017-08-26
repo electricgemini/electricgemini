@@ -1852,7 +1852,8 @@ header.major {
     vertical-align: top; }
     header.major p img {
       float: left;
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 1em; }
   header.major.special {
     text-align: center; }
     header.major.special h2:after {
@@ -1877,6 +1878,9 @@ footer.major {
 
 header.major h2:after {
   background-color: rgba(255, 255, 255, 0.35); }
+
+#second header.major p {
+  text-align: left; }
 
 /* Table */
 .table-wrapper {

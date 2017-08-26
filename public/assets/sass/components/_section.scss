@@ -65,8 +65,11 @@ section.attentiongrab{
         img{
           float:left;
           display:inline-block;
+          margin-right:1em;
         }
 			}
+
+
 
 			&.special {
 				text-align: center;
@@ -94,6 +97,7 @@ section.attentiongrab{
 
 				h2 {
 					font-size: 1.5em;
+
 				}
 
 				p {
@@ -118,8 +122,10 @@ section.attentiongrab{
 		header {
 			&.major {
 				h2 {
+
 					&:after {
 						background-color: _palette($p, border);
+
 
 						@if $p == 'invert' {
 							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
@@ -131,3 +137,10 @@ section.attentiongrab{
 	}
 
 	@include color-section;
+
+  #second header.major {
+
+    p{
+      text-align:left;
+    }
+  }
