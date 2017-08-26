@@ -29,6 +29,8 @@ section.attentiongrab{
       opacity:0.5;
       text-align: center;
     }
+
+
 	}
 
 	header {
@@ -58,6 +60,7 @@ section.attentiongrab{
 			p {
 				font-size: 1.25em;
 				letter-spacing: _font(letter-spacing);
+        vertical-align: top;
 			}
 
 			&.special {
