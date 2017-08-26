@@ -61,6 +61,11 @@ section.attentiongrab{
 				font-size: 1.25em;
 				letter-spacing: _font(letter-spacing);
         vertical-align: top;
+
+        img{
+          float:left;
+          display:inline-block;
+        }
 			}
 
 			&.special {

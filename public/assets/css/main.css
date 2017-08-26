@@ -1850,6 +1850,9 @@ header.major {
     font-size: 1.25em;
     letter-spacing: 0.1em;
     vertical-align: top; }
+    header.major p img {
+      float: left;
+      display: inline-block; }
   header.major.special {
     text-align: center; }
     header.major.special h2:after {
