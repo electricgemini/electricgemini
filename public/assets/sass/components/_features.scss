@@ -10,8 +10,10 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
 		@include vendor('justify-content', 'center');
-		width: calc(100% + #{_size(element-margin)});
-		margin: 0 0 (_size(element-margin) * 1.5) (_size(element-margin) * -1);
+		//width: calc(100% + #{_size(element-margin)});
+		width: _size(inner);
+		max-width: calc(100% - 4em);
+		margin: (_size(element-margin) * 1.5) auto;
 		padding: 0;
 		list-style: none;
 
