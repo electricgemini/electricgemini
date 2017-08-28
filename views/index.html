@@ -115,11 +115,14 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<h2>{{{ cosmic.object.footer.metafield.footer_title.value }}}</h2>
-						<section>
-							{{# cosmic.object.footer.metadata.partners }}
-  							<img src="{{ partner_logo.imgix_url }}" />
-							{{/ cosmic.object.footer.metadata.partners }}
+
+						<section class="partner-logos">
+							<h2>{{{ cosmic.object.footer.metafield.footer_title.value }}}</h2>
+							<ul>
+								{{# cosmic.object.footer.metadata.partners }}
+	  							<li><img src="{{ partner_logo.imgix_url }}" /></li>
+								{{/ cosmic.object.footer.metadata.partners }}
+							</ul>
 
 						</section>
 						<section>

@@ -1835,6 +1835,20 @@ section.attentiongrab {
     opacity: 0.5;
     text-align: center; }
 
+section.partner-logos ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none; }
+  section.partner-logos ul li {
+    width: 150px;
+    height: 150px;
+    background: pink; }
+  section.partner-logos ul li img {
+    width: 100%;
+    display: block;
+    margin: auto 0; }
+
 header.major {
   margin-bottom: 3em; }
   header.major h2 {

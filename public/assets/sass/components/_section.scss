@@ -40,6 +40,31 @@ section.attentiongrab{
 
 	}
 
+section.partner-logos {
+     //background:  _palette(bg);
+     //border-radius: _size(border-radius);
+     //opacity:0.5;
+
+      ul{
+    		padding:0;
+    		display: flex;
+    		flex-wrap: wrap;
+    		list-style-type: none;
+
+        li{
+          width: 150px;
+          height:150px;
+          background:pink;
+        }
+
+    		li img{
+    			width:100%;
+          display:block;
+          margin:auto 0;
+    		}
+    	}
+}
+
 	header {
 
 
