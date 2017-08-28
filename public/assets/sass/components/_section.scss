@@ -45,6 +45,8 @@ section.partner-logos {
      //border-radius: _size(border-radius);
      //opacity:0.5;
 
+
+
       ul{
     		padding:0;
     		@include flexbox();
@@ -54,18 +56,22 @@ section.partner-logos {
         justify-content: space-between;
         list-style-type: none;
 
+
         li{
-          max-width: 120px;
+          width: 120px;
           padding:0;
           margin:1em 0;
           @include flexbox();
           align-items: center;
           justify-content: center;
+          opacity:0.60;
         }
 
     		li img{
-    			width:95%;
+    			max-height:80px;
+          max-width:95%;
           display:block;
+          margin:0 auto;
     		}
     	}
 }

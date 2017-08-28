@@ -1848,7 +1848,7 @@ section.partner-logos ul {
   justify-content: space-between;
   list-style-type: none; }
   section.partner-logos ul li {
-    max-width: 120px;
+    width: 120px;
     padding: 0;
     margin: 1em 0;
     display: -webkit-box;
@@ -1857,10 +1857,13 @@ section.partner-logos ul {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    opacity: 0.60; }
   section.partner-logos ul li img {
-    width: 95%;
-    display: block; }
+    max-height: 80px;
+    max-width: 95%;
+    display: block;
+    margin: 0 auto; }
 
 header.major {
   margin-bottom: 3em; }
@@ -2374,8 +2377,11 @@ table.alt tbody tr td {
   padding: 5em 5em 3em 5em ;
   width: calc(100% + 2em);
   margin: 0 0 3em -2em; }
+  #footer h2 {
+    font-size: 1em;
+    color: #c79cc8; }
   #footer > * {
-    width: calc(50% - 2em);
+    width: calc(45% - 2em);
     margin-left: 2em; }
   #footer .copyright {
     width: 100%;

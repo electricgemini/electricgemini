@@ -13,8 +13,13 @@
 		width: calc(100% + #{_size(element-margin)});
 		margin: 0 0 (_size(element-margin) * 1.5) (_size(element-margin) * -1);
 
+		h2{
+			font-size: _size(font-size-standard);
+			color:_palette(accent2);
+		}
+
 		> * {
-			width: calc(50% - #{_size(element-margin)});
+			width: calc(45% - #{_size(element-margin)});
 			margin-left: _size(element-margin);
 		}
 
