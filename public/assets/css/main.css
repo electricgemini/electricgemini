@@ -1822,6 +1822,9 @@ section {
 
 section.special, article.special {
   text-align: center; }
+  section.special span, article.special span {
+    background-color: pink;
+    border: 1px solid red; }
 
 section.attentiongrab {
   background-color: #000;

@@ -15,7 +15,14 @@
 	section, article {
 		&.special {
 			text-align: center;
+
+      span{
+        background-color:pink;
+        border:1px solid red;
+      }
 		}
+
+
 	}
 
 section.attentiongrab{

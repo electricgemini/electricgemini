@@ -57,7 +57,7 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="first" class="main">
 								<header class="major">
 									<h2>{{ cosmic.object.rapid-protoyping.title }}</h2>
 								</header>
@@ -100,7 +100,7 @@
 
 							<!--Native App Section -->
 								<section id="third" class="main special">
-									<span><img src="{{ cosmic.object.native-app-development.metafield.main_image.imgix_url }}?fit=crop" alt="" /></span>
+									<span><img src="{{ cosmic.object.native-app-development.metafield.main_image.imgix_url }}" alt="" /></span>
 									<header class="major">
 										<h2>{{ cosmic.object.native-app-development.title }}</h2>
 										<p>{{{ cosmic.object.native-app-development.content }}}</p>
@@ -115,12 +115,12 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+						<h2>{{{ cosmic.object.footer.metafield.footer_title.value }}}</h2>
 						<section>
-							<h2>{{ cosmic.object.footer.metafield.footer_title.value }}</h2>
-							<p>{{{ cosmic.object.footer.metafield.footer_content.value }}}</p>
-							<ul class="actions">
-								<li><a target="_blank" href="{{ cosmic.object.footer.metafield.learn_more.value }}" class="button">{{ cosmic.object.footer.metafield.learn_more.title }}</a></li>
-							</ul>
+							{{# cosmic.object.footer.metadata.partners }}
+  							<img src="{{ partner_logo.imgix_url }}" />
+							{{/ cosmic.object.footer.metadata.partners }}
+
 						</section>
 						<section>
 							<h2>{{ cosmic.object.footer.metafield.contact_title.value }}</h2>
