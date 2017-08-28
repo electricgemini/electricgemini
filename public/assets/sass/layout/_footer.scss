@@ -19,7 +19,7 @@
 		}
 
 		> * {
-			width: calc(45% - #{_size(element-margin)});
+			width: calc(45% - 3em);
 			margin-left: _size(element-margin);
 		}
 
