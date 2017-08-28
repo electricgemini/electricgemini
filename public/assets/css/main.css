@@ -1822,9 +1822,8 @@ section {
 
 section.special, article.special {
   text-align: center; }
-  section.special span, article.special span {
-    background-color: pink;
-    border: 1px solid red; }
+  section.special img, article.special img {
+    max-width: 500px; }
 
 section.attentiongrab {
   background-color: #000;
