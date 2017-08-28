@@ -1837,17 +1837,30 @@ section.attentiongrab {
 
 section.partner-logos ul {
   padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: space-between;
+  align-content: space-around;
+  justify-content: space-between;
   list-style-type: none; }
   section.partner-logos ul li {
-    width: 150px;
-    height: 150px;
-    background: pink; }
+    max-width: 120px;
+    padding: 0;
+    margin: 1em 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   section.partner-logos ul li img {
-    width: 100%;
-    display: block;
-    margin: auto 0; }
+    width: 95%;
+    display: block; }
 
 header.major {
   margin-bottom: 3em; }

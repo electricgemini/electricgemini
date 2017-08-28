@@ -47,20 +47,25 @@ section.partner-logos {
 
       ul{
     		padding:0;
-    		display: flex;
-    		flex-wrap: wrap;
-    		list-style-type: none;
+    		@include flexbox();
+        flex-flow: row wrap;
+        -webkit-align-content: space-between;
+        align-content:space-around;
+        justify-content: space-between;
+        list-style-type: none;
 
         li{
-          width: 150px;
-          height:150px;
-          background:pink;
+          max-width: 120px;
+          padding:0;
+          margin:1em 0;
+          @include flexbox();
+          align-items: center;
+          justify-content: center;
         }
 
     		li img{
-    			width:100%;
+    			width:95%;
           display:block;
-          margin:auto 0;
     		}
     	}
 }
