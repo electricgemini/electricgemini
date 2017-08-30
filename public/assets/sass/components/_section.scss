@@ -83,14 +83,13 @@ section.partner-logos {
 			margin-bottom: (_size(element-margin) * 1.5);
 
 			h2 {
-				font-size: 2em;
 
 				&:after {
 					display: block;
 					content: '';
 					width: 3.25em;
 					height: 2px;
-					margin: (_size(element-margin) * 0.35) 0 (_size(element-margin) * 0.5) 0;
+					margin: (_size(element-margin) * 0.25) 0 (_size(element-margin) * 0.5) 0;
 					border-radius: 2px;
 
 					section.special &, article.special & {
@@ -101,7 +100,6 @@ section.partner-logos {
 			}
 
 			p {
-				font-size: 1.25em;
 				letter-spacing: _font(letter-spacing);
         vertical-align: top;
 
@@ -138,10 +136,7 @@ section.partner-logos {
 			&.major {
 				margin-bottom: 0;
 
-				h2 {
-					font-size: 1.5em;
 
-				}
 
 				p {
 					font-size: 1em;
@@ -165,7 +160,6 @@ section.partner-logos {
 		header {
 			&.major {
 				h2 {
-
 					&:after {
 						background-color: _palette($p, border);
 
