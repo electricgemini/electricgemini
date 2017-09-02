@@ -27,9 +27,9 @@
 
 		.copyright {
 			width: 100%;
-			margin: (_size(element-margin) * 1.25) 0 _size(element-margin) 0;
 			font-size: 0.8em;
-			text-align: center;
+			opacity:0.6;
+			weight: _font(thin);
 		}
 
 		@include breakpoint(large) {
@@ -50,6 +50,7 @@
 
 			.copyright {
 				text-align: left;
+				weight: _font(thin);
 			}
 		}
 

@@ -2378,9 +2378,8 @@ table.alt tbody tr td {
     margin-left: 2em; }
   #footer .copyright {
     width: 100%;
-    margin: 2.5em 0 2em 0;
     font-size: 0.8em;
-    text-align: center; }
+    opacity: 0.6; }
   @media screen and (max-width: 1280px) {
     #footer {
       padding: 2em 4em 0.1em 4em ; } }
