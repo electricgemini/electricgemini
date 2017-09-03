@@ -1882,7 +1882,8 @@ header.major {
     header.major p img {
       float: left;
       display: inline-block;
-      margin-right: 1em; }
+      margin-right: 1em;
+      max-width: 100%; }
   header.major.special {
     text-align: center; }
     header.major.special h2:after {
