@@ -2002,13 +2002,12 @@ table.alt tbody tr td {
         margin-top: 3em; } }
   @media screen and (max-width: 736px) {
     .features {
-      width: 100%;
-      margin: 0 0 2em 0; }
+      width: 100%; }
       .features li {
         width: 100%;
         margin-left: 0;
         margin-top: 2em; }
-        .features li:nth-child(2), .features li:nth-child(3) {
+        .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4) {
           margin-top: 2em; } }
 
 /* Statistics */
