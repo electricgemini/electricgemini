@@ -2234,7 +2234,7 @@ table.alt tbody tr td {
   background-color: #000;
   border-top-left-radius: 0.25em;
   border-top-right-radius: 0.25em;
-  cursor: default;
+  cursor: hand;
   text-align: center; }
   #nav input, #nav select, #nav textarea {
     color: #636363; }
@@ -2283,6 +2283,8 @@ table.alt tbody tr td {
         #nav ul li a.active {
           color: #ffffff;
           box-shadow: none; }
+  #nav.slide-in-left {
+    z-index: 10000; }
   #nav.alt {
     position: fixed;
     top: 0;

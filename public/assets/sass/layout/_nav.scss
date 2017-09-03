@@ -22,7 +22,7 @@
 		background-color: _palette(invert, bg-alt);
 		border-top-left-radius: _size(border-radius-main);
 		border-top-right-radius: _size(border-radius-main);
-		cursor: default;
+		cursor: hand;
 		text-align: center;
 
 		& + #main {
@@ -67,6 +67,11 @@
 			}
 		}
 
+		&.slide-in-left{
+			z-index: _misc(z-index-base);
+
+		}
+
 		&.alt {
 			position: fixed;
 			top: 0;
@@ -75,6 +80,7 @@
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: _misc(z-index-base);
+
 
 			ul {
 				li {
