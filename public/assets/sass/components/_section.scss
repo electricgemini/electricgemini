@@ -10,6 +10,14 @@
 	 width: _size(inner);
 	 max-width: calc(100% - 5em);
 	 margin:0 auto;
+
+   @include breakpoint(medium) {
+      text-align: center;
+    }
+
+    @include breakpoint(small) {
+      text-align: center;
+    }
  }
 
 	section, article {
@@ -18,6 +26,10 @@
 
       img{
         max-width:500px;
+
+        @include breakpoint(small) {
+          max-width: 100%;
+        }
       }
 
 		}
@@ -28,9 +40,8 @@
 section.attentiongrab{
 		background-color: #000;
 		width:auto;
-		max-width:100%;
 		padding: (_size(element-margin) * 1) 0;
-    
+
 
 
     header{
@@ -116,6 +127,8 @@ section.partner-logos {
 
 			&.special {
 				text-align: center;
+
+
 
 				h2 {
 					&:after {

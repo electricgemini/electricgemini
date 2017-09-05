@@ -1819,16 +1819,24 @@ section {
   width: 64em;
   max-width: calc(100% - 5em);
   margin: 0 auto; }
+  @media screen and (max-width: 980px) {
+    section {
+      text-align: center; } }
+  @media screen and (max-width: 736px) {
+    section {
+      text-align: center; } }
 
 section.special, article.special {
   text-align: center; }
   section.special img, article.special img {
     max-width: 500px; }
+    @media screen and (max-width: 736px) {
+      section.special img, article.special img {
+        max-width: 100%; } }
 
 section.attentiongrab {
   background-color: #000;
   width: auto;
-  max-width: 100%;
   padding: 2em 0; }
   section.attentiongrab header {
     opacity: 0.5;
@@ -1995,6 +2003,9 @@ table.alt tbody tr td {
       margin-bottom: 0; }
     .features li p {
       color: #A89CC8; }
+    .features li span {
+      display: inline-block;
+      margin: 0 auto; }
   @media screen and (max-width: 980px) {
     .features li {
       width: calc(50% - 2em); }
