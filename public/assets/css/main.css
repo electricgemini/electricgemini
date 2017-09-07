@@ -2377,7 +2377,6 @@ table.alt tbody tr td {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: calc(100% + 2em);
   background: #000; }
   #footer section {
     padding: 3em 5em 1em 5em ; }
@@ -2395,10 +2394,7 @@ table.alt tbody tr td {
       padding: 2em 4em 0.1em 4em ; } }
   @media screen and (max-width: 980px) {
     #footer {
-      padding: 2em 3em 0.1em 3em ;
-      display: block;
-      margin: 0 0 3em 0;
-      width: 100%; }
+      padding: 2em 3em 0.1em 3em ; }
       #footer > * {
         width: 100%;
         margin-left: 0;
