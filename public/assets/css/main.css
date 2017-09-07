@@ -1865,8 +1865,7 @@ section.partner-logos ul {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: center;
-    opacity: 0.60; }
+    justify-content: center; }
   section.partner-logos ul li img {
     max-height: 80px;
     max-width: 100%;
