@@ -9,9 +9,11 @@
 	#main {
 		/*@include color(invert);
 		border-radius: _size(border-radius-main);*/
+		position:relative;
 
 		> .main {
 			@include padding(5em, 5em);
+			max-width: calc(100% - 5em);
 
 			&:first-child {
 				border-top: 0;

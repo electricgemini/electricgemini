@@ -1816,8 +1816,6 @@ dl dt {
 
 /* Section/Article */
 section {
-  width: 64em;
-  max-width: calc(100% - 5em);
   margin: 0 auto; }
   @media screen and (max-width: 980px) {
     section {
@@ -1834,10 +1832,16 @@ section.special, article.special {
       section.special img, article.special img {
         max-width: 100%; } }
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
+
 section.attentiongrab {
   background-color: #000;
-  width: auto;
-  max-width: 100%;
   padding: 2em 0; }
   section.attentiongrab header {
     opacity: 0.5;
@@ -2316,9 +2320,11 @@ table.alt tbody tr td {
 /* Main */
 #main {
   /*@include color(invert);
-		border-radius: _size(border-radius-main);*/ }
+		border-radius: _size(border-radius-main);*/
+  position: relative; }
   #main > .main {
-    padding: 5em 5em 3em 5em ; }
+    padding: 5em 5em 3em 5em ;
+    max-width: calc(100% - 5em); }
     #main > .main:first-child {
       border-top: 0; }
     #main > .main > .image.main:first-child {
@@ -2421,8 +2427,8 @@ table.alt tbody tr td {
 #wrapper {
   position: relative;
   z-index: 100;
-  /* width: _size(inner);
-		max-width: calc(100% - 4em);*/
+  width: 64em;
+  max-width: calc(100% - 4em);
   margin: 0 auto; }
   @media screen and (max-width: 360px) {
     #wrapper {
