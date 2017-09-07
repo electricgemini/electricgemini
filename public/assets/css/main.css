@@ -1832,14 +1832,6 @@ section.special, article.special {
       section.special img, article.special img {
         max-width: 100%; } }
 
-.full-width {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw; }
-
 section.attentiongrab {
   background-color: #000;
   padding: 2em 0; }
@@ -2433,3 +2425,11 @@ table.alt tbody tr td {
   @media screen and (max-width: 360px) {
     #wrapper {
       max-width: 100%; } }
+
+.bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
