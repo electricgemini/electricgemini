@@ -30,7 +30,6 @@
 
 			        li{
 			          width: 100px;
-			          background:blue;
 			          padding:0;
 			          margin:1em 0.5em;
 			          @include flexbox();
@@ -39,17 +38,14 @@
 
 								@include breakpoint(large) {
 									width:45%;
-									background:pink;
 								}
 
 								@include breakpoint(medium) {
 									width:45%;
-									background:yellow;
 								}
 
 								@include breakpoint(small) {
 									width:45%;
-									background:green;
 								}
 
 
