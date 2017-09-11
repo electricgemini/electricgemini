@@ -8,6 +8,7 @@
 
  section{
 	 margin:0 auto;
+   padding: (_size(element-margin) * 1) 0;
 
      //width: _size(inner);
 
@@ -40,7 +41,7 @@
 
 section.attentiongrab{
 		background-color: #000;
-		padding: (_size(element-margin) * 1) 0;
+
 
 
 
@@ -116,9 +117,8 @@ section.partner-logos {
         vertical-align: top;
 
         img{
-          float:left;
-          display:inline-block;
-          margin-right:1em;
+          display:block;
+          margin:0 auto;
           max-width:100%;
         }
 			}
