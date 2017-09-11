@@ -37,6 +37,22 @@
 			          align-items: center;
 			          justify-content: center;
 
+								@include breakpoint(large) {
+									width:45%;
+									background:pink;
+								}
+
+								@include breakpoint(medium) {
+									width:45%;
+									background:yellow;
+								}
+
+								@include breakpoint(small) {
+									width:45%;
+									background:green;
+								}
+
+
 			        }
 
 			    		li img{
