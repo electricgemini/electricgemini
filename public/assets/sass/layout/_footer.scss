@@ -12,7 +12,41 @@
 		background: _palette(bg);
 
 		section{
-			@include padding(3em, 5em);
+			@include padding(3em, 0);
+
+			&.partner-logos {
+
+
+
+			      ul{
+			    		padding:0;
+			    		@include flexbox();
+			        flex-flow: row wrap;
+			        -webkit-align-content: space-between;
+			        align-content:space-around;
+			        justify-content: space-between;
+			        list-style-type: none;
+
+
+			        li{
+			          width: 100px;
+			          background:blue;
+			          padding:0;
+			          margin:1em 0.5em;
+			          @include flexbox();
+			          align-items: center;
+			          justify-content: center;
+
+			        }
+
+			    		li img{
+			    			max-height:80px;
+			          max-width:100%;
+			          display:block;
+			          margin:0 auto;
+			    		}
+			    	}
+			}
 		}
 
 		h2{

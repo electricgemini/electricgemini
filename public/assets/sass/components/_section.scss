@@ -53,41 +53,7 @@ section.attentiongrab{
 
 	}
 
-section.partner-logos {
-     //background:  _palette(bg);
-     //border-radius: _size(border-radius);
-     //opacity:0.5;
 
-
-
-      ul{
-    		padding:0;
-    		@include flexbox();
-        flex-flow: row wrap;
-        -webkit-align-content: space-between;
-        align-content:space-around;
-        justify-content: space-between;
-        list-style-type: none;
-
-
-        li{
-          width: 100px;
-          padding:0;
-          margin:1em 0;
-          @include flexbox();
-          align-items: center;
-          justify-content: center;
-
-        }
-
-    		li img{
-    			max-height:80px;
-          max-width:100%;
-          display:block;
-          margin:0 auto;
-    		}
-    	}
-}
 
 	header {
 
