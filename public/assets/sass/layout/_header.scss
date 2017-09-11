@@ -48,12 +48,23 @@
 					margin: 0 auto;
 					min-width: 55%;
 					max-width:95%;
+
+					@include breakpoint(medium) {
+						min-width: 95%;
+						max-width:100%;
+					}
+
+					@include breakpoint(small) {
+						min-width: 95%;
+						max-width:100%;
+					}
 				}
 			}
 		}
 
 		@include breakpoint(large) {
 			@include padding(4em, 4em, (0, 0, -2em, 0));
+
 
 			&.alt {
 				@include padding(5em, 4em, (1em, 0, 0, 0));
@@ -63,6 +74,9 @@
 		@include breakpoint(medium) {
 			@include padding(4em, 3em, (0, 0, -2em, 0));
 
+			img {
+				min-width: 95%;}
+
 			&.alt {
 				@include padding(4em, 3em, (1em, 0, 0, 0));
 			}
@@ -70,6 +84,8 @@
 
 		@include breakpoint(small) {
 			@include padding(3em, 2em, (0, 0, -1em, 0));
+
+
 
 			p {
 				font-size: 1em;
@@ -83,9 +99,7 @@
 			&.alt {
 				@include padding(3em, 2em, (1em, 0, 0, 0));
 
-				h1 {
-					font-size: 2.5em;
-				}
+
 			}
 		}
 

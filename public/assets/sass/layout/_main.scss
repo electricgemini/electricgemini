@@ -12,8 +12,6 @@
 		position:relative;
 
 		> .main {
-			@include padding(5em, 5em);
-			max-width: calc(100% - 5em);
 
 			&:first-child {
 				border-top: 0;
@@ -60,7 +58,7 @@
 
 		@include breakpoint(small) {
 			> .main {
-				@include padding(3em, 2em);
+				@include padding(2em, 1.5em);
 
 				> .image.main:first-child {
 					margin: -3em 0 2em -2em;
@@ -79,12 +77,12 @@
 				}
 			}
 		}
-
+		
 		@include breakpoint(xxsmall) {
 			border-radius: 0;
 
 			> .main {
-				@include padding(2.5em, 1em);
+				@include padding(2.5em, 2em);
 
 				> .image.main:first-child {
 					margin: -2.5em 0 1.5em -1em;

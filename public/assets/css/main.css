@@ -1940,15 +1940,21 @@ dl dt {
   color: #ffffff; }
 
 /* Section/Article */
-section {
-  margin: 0 auto;
-  padding: 2em 0; }
-  @media screen and (max-width: 980px) {
-    section {
-      text-align: center; } }
-  @media screen and (max-width: 736px) {
-    section {
-      text-align: center; } }
+@media screen and (max-width: 980px) {
+  section {
+    text-align: center; } }
+
+@media screen and (max-width: 736px) {
+  section {
+    text-align: center; } }
+
+section p {
+  letter-spacing: 0.1em;
+  vertical-align: top; }
+  section p img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
 
 section.special, article.special {
   text-align: center; }
@@ -1956,7 +1962,7 @@ section.special, article.special {
     max-width: 500px; }
     @media screen and (max-width: 736px) {
       section.special img, article.special img {
-        max-width: 100%; } }
+        max-width: 95%; } }
 
 section.attentiongrab {
   background-color: #000; }
@@ -1976,13 +1982,6 @@ header.major {
     section.special header.major h2:after, article.special header.major h2:after {
       margin-left: auto;
       margin-right: auto; }
-  header.major p {
-    letter-spacing: 0.1em;
-    vertical-align: top; }
-    header.major p img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%; }
   header.major.special {
     text-align: center; }
     header.major.special h2:after {
@@ -2081,7 +2080,7 @@ table.alt tbody tr td {
   width: 64em;
   max-width: calc(100% - 4em);
   margin: 3em auto;
-  padding: 0;
+  padding: 2em 0;
   list-style: none; }
   .features li {
     width: calc(25% - 2em);
@@ -2280,6 +2279,14 @@ table.alt tbody tr td {
         margin: 0 auto;
         min-width: 55%;
         max-width: 95%; }
+        @media screen and (max-width: 980px) {
+          #header.alt .logo img {
+            min-width: 95%;
+            max-width: 100%; } }
+        @media screen and (max-width: 736px) {
+          #header.alt .logo img {
+            min-width: 95%;
+            max-width: 100%; } }
   @media screen and (max-width: 1280px) {
     #header {
       padding: 4em 4em 0.1em 4em ; }
@@ -2288,6 +2295,8 @@ table.alt tbody tr td {
   @media screen and (max-width: 980px) {
     #header {
       padding: 4em 3em 0.1em 3em ; }
+      #header img {
+        min-width: 95%; }
       #header.alt {
         padding: 5em 3em 2em 3em ; } }
   @media screen and (max-width: 736px) {
@@ -2299,9 +2308,7 @@ table.alt tbody tr td {
         #header p br {
           display: none; }
       #header.alt {
-        padding: 4em 2em 1em 2em ; }
-        #header.alt h1 {
-          font-size: 2.5em; } }
+        padding: 4em 2em 1em 2em ; } }
   @media screen and (max-width: 480px) {
     #header {
       padding: 3em 1.5em 0.1em 1.5em ; }
@@ -2409,23 +2416,20 @@ table.alt tbody tr td {
   /*@include color(invert);
 		border-radius: _size(border-radius-main);*/
   position: relative; }
-  #main > .main {
-    padding: 5em 5em 3em 5em ;
-    max-width: calc(100% - 5em); }
-    #main > .main:first-child {
-      border-top: 0; }
-    #main > .main > .image.main:first-child {
-      margin: -5em 0 5em -5em;
-      width: calc(100% + 10em);
+  #main > .main:first-child {
+    border-top: 0; }
+  #main > .main > .image.main:first-child {
+    margin: -5em 0 5em -5em;
+    width: calc(100% + 10em);
+    border-top-right-radius: 0.25em;
+    border-top-left-radius: 0.25em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+    #main > .main > .image.main:first-child img {
       border-top-right-radius: 0.25em;
       border-top-left-radius: 0.25em;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0; }
-      #main > .main > .image.main:first-child img {
-        border-top-right-radius: 0.25em;
-        border-top-left-radius: 0.25em;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0; }
   @media screen and (max-width: 1280px) {
     #main > .main {
       padding: 4em 4em 2em 4em ; }
@@ -2440,7 +2444,7 @@ table.alt tbody tr td {
         width: calc(100% + 6em); } }
   @media screen and (max-width: 736px) {
     #main > .main {
-      padding: 3em 2em 1em 2em ; }
+      padding: 2em 1.5em 0.1em 1.5em ; }
       #main > .main > .image.main:first-child {
         margin: -3em 0 2em -2em;
         width: calc(100% + 4em); } }
@@ -2454,7 +2458,7 @@ table.alt tbody tr td {
     #main {
       border-radius: 0; }
       #main > .main {
-        padding: 2.5em 1em 0.5em 1em ; }
+        padding: 2.5em 2em 0.5em 2em ; }
         #main > .main > .image.main:first-child {
           margin: -2.5em 0 1.5em -1em;
           width: calc(100% + 2em);

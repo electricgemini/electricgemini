@@ -40,7 +40,7 @@
 				<!-- Main -->
 					<div id="main">
 						<!-- Introduction -->
-							<section id="intro" >
+							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -53,21 +53,21 @@
 							</section>
 
 							<!-- Future Vision Section #first -->
-								<section id="first">
+								<section id="first" class="main">
 									<header class="major">
 										<h2>{{ cosmic.object.future-vision-consultancy.title }}</h2>
 										<!--<img src="{{ cosmic.object.future-vision-consultancy.metafield.future_vision_image.imgix_url }}?fit=crop&bm=burn&blend64=Q0Y4REND&mask=corners&w=300&h=300" alt="" /-->
-										{{{ cosmic.object.future-vision-consultancy.content }}}
 									</header>
+									{{{ cosmic.object.future-vision-consultancy.content }}}
 
 								</section>
 
 						<!-- Rapid Prototyping #second -->
-							<section id="second">
+							<section id="second" class="main">
 								<header class="major">
 									<h2>{{ cosmic.object.rapid-prototyping.title }}</h2>
 								</header>
-								<p>{{{ cosmic.object.rapid-prototyping.content }}}</p>
+								{{{ cosmic.object.rapid-prototyping.content }}}
 							</section>
 							<section class="attentiongrab bleed">
 									<ul class="features">
@@ -97,13 +97,14 @@
 
 
 							<!--Mobile App Section -->
-								<section id="third" class="special">
+								<section id="third" class="special main">
 									<span><img src="{{ cosmic.object.mobile-app-development.metafield.main_image.imgix_url }}" alt="" /></span>
 									<header class="major">
 										<h2>{{ cosmic.object.mobile-app-development.title }}</h2>
-										<p>{{{ cosmic.object.mobile-app-development.content }}}</p>
 									</header>
+									{{{ cosmic.object.mobile-app-development.content }}}
 									{{{ cosmic.object.mobile-app-development.metafield.stat_content.value }}}
+
 
 								</section>
 

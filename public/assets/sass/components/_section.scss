@@ -7,8 +7,7 @@
 /* Section/Article */
 
  section{
-	 margin:0 auto;
-   padding: (_size(element-margin) * 1) 0;
+
 
      //width: _size(inner);
 
@@ -18,6 +17,17 @@
 
     @include breakpoint(small) {
       text-align: center;
+    }
+
+    p {
+      letter-spacing: _font(letter-spacing);
+      vertical-align: top;
+
+      img{
+        display:block;
+        margin:0 auto;
+        max-width:100%;
+      }
     }
  }
 
@@ -29,7 +39,7 @@
         max-width:500px;
 
         @include breakpoint(small) {
-          max-width: 100%;
+          max-width: 95%;
         }
       }
 
@@ -78,16 +88,7 @@ section.attentiongrab{
 				}
 			}
 
-			p {
-				letter-spacing: _font(letter-spacing);
-        vertical-align: top;
 
-        img{
-          display:block;
-          margin:0 auto;
-          max-width:100%;
-        }
-			}
 
 
 
