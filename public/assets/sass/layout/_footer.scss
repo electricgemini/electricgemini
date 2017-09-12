@@ -36,9 +36,6 @@
 			          align-items: center;
 			          justify-content: center;
 
-								@include breakpoint(large) {
-									width:45%;
-								}
 
 								@include breakpoint(medium) {
 									width:45%;

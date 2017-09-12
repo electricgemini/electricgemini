@@ -2523,9 +2523,6 @@ table.alt tbody tr td {
         display: flex;
         align-items: center;
         justify-content: center; }
-        @media screen and (max-width: 1280px) {
-          #footer section.partner-logos ul li {
-            width: 45%; } }
         @media screen and (max-width: 980px) {
           #footer section.partner-logos ul li {
             width: 45%; } }
