@@ -1913,21 +1913,27 @@ ul {
             padding-top: 0; } }
 
 dl {
-  margin: 0 0 2em 0; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  max-width: 85%;
+  text-align: left;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start; }
   dl dt {
-    display: block;
     font-weight: 900;
-    margin: 0 0 1em 0; }
+    min-width: 20%;
+    max-width: 25%; }
   dl dd {
-    margin-left: 2em; }
+    margin: 0 0 1em 0;
+    min-width: 75%;
+    max-width: 100%; }
   dl.alt dt {
-    display: block;
-    width: 3em;
-    margin: 0;
-    clear: left;
-    float: left; }
-  dl.alt dd {
-    margin: 0 0 0.85em 5.5em; }
+    margin: 0; }
   dl.alt:after {
     content: '';
     display: block;

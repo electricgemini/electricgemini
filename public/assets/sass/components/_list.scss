@@ -160,30 +160,33 @@
 	}
 
 	dl {
-		margin: 0 0 _size(element-margin) 0;
+		@include flexbox();
+		max-width: 85%;
+		text-align: left;
+		flex-flow: row wrap;
+		-webkit-align-content: flex-start;
+		align-content:flex-start;
+		justify-content: flex-start;
+
 
 		dt {
-			display: block;
 			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			min-width:20%;
+			max-width: 25%;
+			//margin: 0 0 (_size(element-margin) * 0.5) 0;
 		}
 
 		dd {
-			margin-left: _size(element-margin);
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			min-width:75%;
+			max-width: 100%;
 		}
 
 		&.alt {
 			dt {
-				display: block;
-				width: 3em;
 				margin: 0;
-				clear: left;
-				float: left;
 			}
 
-			dd {
-				margin: 0 0 0.85em 5.5em;
-			}
 
 			&:after {
 				content: '';
