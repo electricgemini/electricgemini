@@ -74,7 +74,7 @@
 			width: 100%;
 			font-size: 0.8em;
 			opacity:0.6;
-			weight: _font(thin);
+			weight: _font(weight-thin);
 		}
 
 		@include breakpoint(large) {
@@ -92,7 +92,7 @@
 
 			.copyright {
 				text-align: left;
-				weight: _font(thin);
+				weight: _font(weight-thin);
 			}
 		}
 
